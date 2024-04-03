@@ -1,36 +1,36 @@
 <template>
   <Head>
-    <Title>Luc1ous</Title>
+    <Title>Ardian Ilyas Fernanda</Title>
   </Head>
   <!-- Hero -->
   <div class="w-full max-w-3xl mx-auto min-h-screen flex justify-center items-center">
     <div class="text-center container">
-      <h1 class="text-5xl md:text-6xl font-semibold">Ardian Ilyas Fernanda</h1>
-      <p class="mt-2 text-sm md:text-base text-gray-600 md:leading-loose">A human that have interest about Web Programming. Currently interesting in a backend field (<span class="text-red-600">Laravel</span> , <span class="text-green-600">Express.js</span>, and <span class="text-violet-600">Adonis.js</span>). FYI this website is build using Nuxt.js and Tailwind CSS tech. This year I'am {{ age }} years old.</p>
+      <h1 class="text-5xl md:text-6xl dark:text-white font-semibold">Ardian Ilyas Fernanda</h1>
+      <p class="mt-2 text-sm md:text-base text-gray-600 dark:text-gray-300 md:leading-loose">A human that have interest about Web Programming. Currently interesting in a backend field (<span class="text-red-600">Laravel</span> , <span class="text-green-600">Express.js</span>, and <span class="text-violet-600">Adonis.js</span>). FYI this website is build using Nuxt.js and Tailwind CSS tech. This year I'am {{ age }} years old.</p>
     </div>
   </div>
 
   <!-- Skills section -->
   <div class="container w-full min-h-screen p-10" id="skills">
-    <h2 class="text-center font-semibold text-4xl">Skills</h2>
-    <p class="text-center text-gray-600">There are my skills about web programming (programming language, software, etc).</p>
+    <h2 class="text-center font-semibold dark:text-white text-4xl">Skills</h2>
+    <p class="text-center text-gray-600 dark:text-gray-300">There are my skills about web programming (programming language, software, etc).</p>
 
     <div class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <a :href="skill.href" target="_blank" v-for="skill in skills" class="bg-white p-6 shadow-md rounded-md border border-gray-200 hover:bg-gray-50/70 flex flex-col justify-center">
+      <a :href="skill.href" target="_blank" v-for="skill in skills" class="bg-white dark:bg-neutral-900 p-6 shadow-md rounded-md border border-gray-200 hover:bg-gray-50/70 flex flex-col justify-center">
         <h4 :class="skill.color" class="text-xl font-semibold">{{ skill.name }}</h4>
-        <p class="mt-2 text-sm text-gray-600 leading-loose">{{ skill.description }}</p>
+        <p class="mt-2 text-sm text-gray-600 dark:text-gray-300 leading-loose">{{ skill.description }}</p>
       </a>
     </div>
   </div>
 
   <!-- Github repo -->
   <div class="container w-full p-10 flex flex-col justify-center items-center">
-    <img src="~/assets/img/github.png" width="50" alt="">
-    <h2 class="mt-2 text-center text-3xl font-semibold">Kindly check my github repository <a href="https://github.com/Luc1ous" target="_blank" class="text-blue-600 underline underline-offset-4">here</a> </h2>
+    <!-- <img src="~/assets/img/github.png" class="" width="50" alt=""> -->
+    <h2 class="mt-2 text-center text-3xl dark:text-white font-semibold">Kindly check my github repository <a href="https://github.com/Luc1ous" target="_blank" class="text-blue-600 underline underline-offset-4">here</a> </h2>
   </div>
 
-  <div class="w-full bg-white/70 p-10 text-center">
-    <p class="text-gray-600">&copy; {{ new Date().getFullYear() }} Ardian Ilyas Fernanda. All rights reserved.</p>
+  <div class="w-full bg-white/70 dark:bg-neutral-900/70 p-10 text-center">
+    <p class="text-gray-600 dark:text-gray-300">&copy; {{ new Date().getFullYear() }} Ardian Ilyas Fernanda. All rights reserved.</p>
   </div>
 </template>
 
